@@ -61,28 +61,22 @@ function LoginForm({ onLogin, onUserName }) {
 
     return (
         <form className="login-form" onSubmit={handleSubmit}>
-            <p>Login</p>
-            <label>
-                Email
-            </label>
+            <p>Log In</p>
             <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter your email"
+                placeholder="Email"
             />
-            <label>
-                Password
-            </label>
             <input
                 type="password"
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
-                placeholder="Enter your password"
+                placeholder="Password"
             />
-            <button type="submit">Submit</button>
+            <button type="submit">LOG IN</button>
         </form>
     )
 }

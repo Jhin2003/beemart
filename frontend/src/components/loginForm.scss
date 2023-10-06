@@ -1,6 +1,6 @@
 .login-form {
-    width: 40%;
-    height: 60%;
+    width: 30%;
+    height: 50%;
     padding: 0.2rem;
     display: flex;
     flex-direction: column;
@@ -9,22 +9,27 @@
     p{
         margin: 0.02rem;
         font-size: 0.24rem;
+        font-weight: 400;
+        
     }
     
-    label{
-        margin: 0.02rem;
-        font-size: 0.24rem;
-    }
 
     input{
-        margin: 0.02rem;
-        width: 50%;
-        font-size: 0.24rem;
+        height: 10%;
+        width: 70%;
+        margin-top: 5%;
+        padding-left: 2%;
+        font-size: 0.16rem;
+        
     }
 
     button{
-        width: 50%;
-        margin: 0.02rem;
-        font-size: 0.24rem;
+        height: 10%;
+        width: 70%;
+        margin-top: 5%;
+        border: none;
+        background-color: #fafa38;
+        font-weight: 700;
+        font-size: 0.16rem;
     }
 }
