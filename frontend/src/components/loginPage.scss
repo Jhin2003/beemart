@@ -1,0 +1,54 @@
+.login-page{
+    width: 100%;
+    height: 100%;
+    background-color:#037FC5 ;
+    
+   
+}
+
+.login-page-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  
+
+    
+    
+   
+}
+.login-label{
+   
+   
+    font-size:1rem;
+    color:#FAFA38;
+   
+    
+
+    
+}
+
+.login-buttons-container{
+  display: flex;
+  justify-content: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.login-button{
+    width: 10%;
+    padding: 1%;
+    margin: 1%;
+ 
+    
+}
+
+.signup-button{
+    width: 10%;
+    padding: 1%;
+    margin: 1%;
+}

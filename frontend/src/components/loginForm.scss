@@ -1,0 +1,30 @@
+.login-form {
+    width: 40%;
+    height: 60%;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    p{
+        margin: 0.02rem;
+        font-size: 0.24rem;
+    }
+    
+    label{
+        margin: 0.02rem;
+        font-size: 0.24rem;
+    }
+
+    input{
+        margin: 0.02rem;
+        width: 50%;
+        font-size: 0.24rem;
+    }
+
+    button{
+        width: 50%;
+        margin: 0.02rem;
+        font-size: 0.24rem;
+    }
+}

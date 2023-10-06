@@ -1,0 +1,41 @@
+.product-buy-container{
+    width: 80%;
+    height: 80%;
+    padding-top: 2%;
+    display: grid;
+    column-gap: 2%;
+    row-gap: 2%;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    .product-buy-container{
+    
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+     
+      
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .product-buy-container{
+    
+      grid-template-columns: 1fr 1fr 1fr ;
+     
+      
+    }
+  }
+
+  
+  @media screen and (max-width: 425px) {
+    .product-buy-container{
+    
+      grid-template-columns: 1fr 1fr  ;
+     
+      
+    }
+  }
+  

@@ -1,0 +1,58 @@
+html {
+  font-size: 100px; /* Set your desired base font size here */
+}
+
+*{
+  font-family: "Poppins", "Sans-Serif";
+  margin: 0;
+  box-sizing: border-box;
+ // outline: red dashed 2px;
+ 
+}
+
+body {
+  overflow-x: hidden;
+  
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 70px; /* Set your desired base font size here */
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 50px; /* Set your desired base font size here */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 30px; /* Set your desired base font size here */
+  }
+}
