@@ -4,7 +4,7 @@
     padding: 0.2rem;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #f4f4f2;
 
     p{
         margin: 0.02rem;
@@ -18,6 +18,7 @@
         height: 10%;
         width: 70%;
         margin-top: 5%;
+        border: 2px solid #5b5b5b;
         padding-left: 2%;
         font-size: 0.16rem;
         
@@ -32,4 +33,27 @@
         font-weight: 700;
         font-size: 0.16rem;
     }
+
+    .signup-action-container{
+        margin-top: 4%;
+
+        p{
+            
+            font-size: 0.16rem;
+            font-weight: 400;
+        }
+    
+        .inline-button {
+            display: inline-block;
+            background: none;
+            border: none;
+            padding: 0;
+            font-weight: 700;
+            outline: none;
+            color: #037FC5; 
+           cursor: default;
+          }
+    }
 }
+
+

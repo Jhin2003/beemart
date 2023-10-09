@@ -12,8 +12,8 @@ return(
       <>
       {willSell? <ProductSellList /> : <ProductList/>}
       <div className="transaction-tab">   
-        <Button onClick = {() => setWillSell(false)} label= "Buy" /> 
-        <Button onClick = {() => setWillSell(true)} label= "Sell" /> 
+        {willSell &&<Button onClick = {() => setWillSell(false)} label= "Buy" />}
+        {!willSell &&<Button onClick = {() => setWillSell(true)} label= "Sell" />}
       </div>  
       </>
         

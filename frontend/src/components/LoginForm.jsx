@@ -54,7 +54,9 @@ function LoginForm({ onLogin, onUserName }) {
             console.error(error)
         }
     }
-
+   const handleButtonClick = () =>{
+    alert("Button clicked!");
+   }
    const sendUserName = (fName, lName) =>{
      onUserName(fName,lName)
    }
@@ -77,6 +79,9 @@ function LoginForm({ onLogin, onUserName }) {
                 placeholder="Password"
             />
             <button type="submit">LOG IN</button>
+            <div className="signup-action-container">
+            <p>New to Beemart? <span class="inline-button" onClick= {handleButtonClick}>Sign Up</span></p>
+            </div>
         </form>
     )
 }
