@@ -23,7 +23,7 @@ app.get('/lol', (req, res) => {
    
   })
 
-  app.post('/lel', (req, res) => {
+  app.post('/login', (req, res) => {
    let response = {data : "not found"}
    
     let email = req.body.email
@@ -44,6 +44,38 @@ app.get('/lol', (req, res) => {
     res.json(response)
  })
 
+ app.post('/signup', (req,res) =>{
+   const response = {
+         data : "pending"
+   }
+   const newAccount = {
+    firstname : req.body.firstname,
+    lastname : req.body.lastname,
+    email : req.body.email,
+    password : req.body.password
+   }
+  
+   const Accounts = fs.readFileSync("./accounts.json", "utf-8")
+   const AccountsArray = JSON.parse(Accounts);
+
+   for(let i = 0; i < AccountsArray.length; i++){
+     if(newAccount.email == AccountsArray[i].email){
+      response.data = "exist"
+     }
+   }
+   if(response.data != "exist"){
+    AccountsArray.push(newAccount)
+    try{
+     fs.writeFileSync("./accounts.json", JSON.stringify(AccountsArray,null, 2), 'utf-8');
+     response.data = "posted"
+    }
+    catch(e){
+      console.log(e)
+    }
+   }
+   res.json(response)
+
+ }) 
 
 
 app.listen(port, () => {

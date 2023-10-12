@@ -1,9 +1,6 @@
-.login-form {
-    
+.signup-form {
     width: 30%;
-    min-width: 300px;
-    height: 50%;
-    min-height: 300px;
+    height: 60%;
     padding: 0.2rem;
     display: flex;
     flex-direction: column;
@@ -37,7 +34,7 @@
         font-size: 0.16rem;
     }
 
-    .signup-action-container{
+    .login-action-container{
         margin-top: 4%;
 
         p{
@@ -46,7 +43,7 @@
             font-weight: 400;
         }
     
-        .signup-action-button {
+        .login-action-button {
             display: inline-block;
             background: none;
             border: none;
@@ -57,6 +54,10 @@
            cursor: default;
           }
     }
+}
+
+.inactive{
+    display: none;
 }
 
 

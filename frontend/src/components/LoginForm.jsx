@@ -1,7 +1,7 @@
 import "./loginForm.scss"
 import { useState } from "react";
 
-function LoginForm({ onLogin, onUserName }) {
+function LoginForm({ onLogin, onUserName, onSignup }) {
 
     const [formData, setFormData] = useState(
         {
@@ -29,7 +29,7 @@ function LoginForm({ onLogin, onUserName }) {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const postAccountData = async (formData) => {
-            const response = await fetch('http://Localhost:3000/lel', {
+            const response = await fetch('http://Localhost:3000/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -54,13 +54,14 @@ function LoginForm({ onLogin, onUserName }) {
             console.error(error)
         }
     }
-   const handleButtonClick = () =>{
-    alert("Button clicked!");
-   }
+  
    const sendUserName = (fName, lName) =>{
      onUserName(fName,lName)
    }
 
+   const handleSignupActionButton = () =>{
+     onSignup()
+   }
     return (
         <form className="login-form" onSubmit={handleSubmit}>
             <p>Log In</p>
@@ -80,7 +81,7 @@ function LoginForm({ onLogin, onUserName }) {
             />
             <button type="submit">LOG IN</button>
             <div className="signup-action-container">
-            <p>New to Beemart? <span class="inline-button" onClick= {handleButtonClick}>Sign Up</span></p>
+            <p>New to Beemart? <span className="signup-action-button" onClick= {handleSignupActionButton}>Sign Up</span></p>
             </div>
         </form>
     )
