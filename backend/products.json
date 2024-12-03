@@ -2,6 +2,12 @@
     {
       "id": "1",
       "name": "Nike Shoes",
+      "description" : "Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Sed vel tortor sed enim blandit euismod. Proin quis est elit.Maecenas sed hendrerit mauris, sed commodo turpis. ",
+      "seller": {
+        "firstname" : "doggy",
+        "lastname" : "dog",
+        "email" : "doggy@gmail.com"
+      },
       "price": "₱2000",
       "location": "Antipolo",
       "image": "/uploads/addidad.jpg"
@@ -9,104 +15,7 @@
     {
       "id": "2",
       "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
-      "price": "₱2000",
-      "location": "Marikina",
-      "image": "/uploads/under.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Under Shoes",
+      "description" : "Lorem ipsum dolor sit amet, onsectetur adipiscing elit. Sed vel tortor sed enim blandit euismod. Proin quis est elit.Maecenas sed hendrerit mauris, sed commodo turpis. ",
       "price": "₱2000",
       "location": "Marikina",
       "image": "/uploads/under.jpg"

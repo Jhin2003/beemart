@@ -1,14 +1,37 @@
 import "./searchBar.scss"
-function SearchBar() {
+import { useEffect, useRef, useState } from "react";
+import getProducts from "../hooks/getProducts";
+
+
+function SearchBar({onSearch}) {
+  let {productsData, isLoading} = getProducts()
+  const [searchQuery, setSearchQuery] = useState('');
+  
+  
+
+  const handleSearch = (e) =>{ 
+    e.preventDefault()
+    let results = productsData.filter(item =>{
+      return  item.name.toLowerCase().includes(searchQuery.toLowerCase())
+    })
+    onSearch(results)
+  }
+ 
+  const handleInputChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
  return(
-    <div className ="search-bar" >
+    <form className ="search-bar" onSubmit={handleSearch}>
     <input
       type="text"
       placeholder="Search..."
+      value={searchQuery}
+      onChange={handleInputChange}
      />
-    <button>Search</button>
-  </div>
+    <button type="submit">Search</button>
+  </form>
  )
 }
+
 
 export default SearchBar

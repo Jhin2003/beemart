@@ -23,17 +23,28 @@ app.get('/lol', (req, res) => {
    
   })
 
+app.get('/products/:id', (req,res) =>{
+  const requestId = req.params
+  const myfs = fs.readFileSync("./products.json", "utf-8")
+  jsonData = JSON.parse(myfs)
+  console.log(requestId)
+
+  for(let i = 0; i < jsonData.length; i++){
+    
+  }
+})
+
   app.post('/login', (req, res) => {
    let response = {data : "not found"}
    
     let email = req.body.email
     
     const myfs = fs.readFileSync("./accounts.json", "utf-8")
-    const dataArray = JSON.parse(myfs);
+    const dataArray = JSON.parse(myfs);  
     
 
     for(let i = 0; i < dataArray.length; i++){
-      console.log(dataArray[i])
+     
       if(email == dataArray[i].email){
         response.data = "found"
         response.firstName = dataArray[i].firstname
